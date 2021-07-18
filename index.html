@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TSF Donation</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="row clearfix">
+                    <img src="image/logo.png" alt="Logo of Organizaton" class="logo">
+                    
+                    
+
+                    <ul class="main-nav"  id="check-click" >
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT US</a></li>
+                        <li><a class="btn2">CONTACT</a></li>
+                        
+                    </ul>
+
+                    <ul class="contact">
+                        <li id="condetails1">Email- <a href="#" class="colordetails">sparksfoundation@gmail.com</a></li>
+                        <li id="condetails2">Instagram- <a href="#" class="colordetails">thesparksfoundation</a></li>
+                        <li id="condetails3">Contact- <a href="#" class="colordetails">9930421678/ 8821356789</a></li>
+                    </ul>
+                    <script>
+                        $(document).ready(function(){
+                         
+                            $(".contact").hide();
+                         
+                          $(".btn2").click(function(){
+                            $(".contact").toggle();
+                          });
+                        });
+                        </script>
+
+                   
+                      
+                   
+                    
+                   
+                    <a href="#" class="mobile-icon" onclick="slideshow()"><i class="fa fa-bars"></i></a>
+                    
+
+                </div>
+            </nav>
+            
+
+            <div class="main-content">
+            <h1>Education is the Right to All!!</h1>
+            <h2>Child is meant to learn, not to earn.</h2>
+            <h3>This is an initiative to create awarenees and help the Poor<br> & Needy children to get one of important basic resoucre. </h3>
+            
+            
+            
+            <a href="#">
+                    <div class="donateButton" id="donateButton">
+                        Click here to Donate
+                    </div>
+                </a>
+                
+                <div class="modal" id="modal" >
+                <div class="message">The Sparks Foundation appreciates your participation and is thankful to you!!
+                </div>
+                <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HZ9yih4LNJ6RfZ" async> </script> </form>
+                <div class="cross" id="cross">x</div>
+            </div>
+            
+            
+            
+            
+
+               
+            
+             </div>        
+             
+            
+           
+            
+            
+
+        </header>
+        <script src="app.js" async defer></script>
+        
+        
+
+        
+
+    </body>
+</html>
+
+
+
+
+

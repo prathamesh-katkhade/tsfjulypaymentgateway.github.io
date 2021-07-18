@@ -1,0 +1,266 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-size: 20px;
+    overflow-x: hidden;
+    color: white;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.4)), url('../image/home.jpg');
+    
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.4)), url('../image/home.jpg');
+    
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.clearfix:after{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+
+}
+
+.row{
+    max-width: 1180px;  
+    margin: 0 auto;
+}
+
+.logo{
+    height: 120px;
+    width: auto;
+    float: left;
+    margin-top: 15px;
+    border-radius: 20%;
+}
+
+
+
+.main-nav{
+    float: right;
+    margin-top: 60px;
+    
+}
+
+.main-nav li{
+    display:inline-block;
+    list-style: none;
+    margin-left: 40px;
+}
+
+.main-nav li a{
+    padding: 5px 0;    /*To get spacing for bottom line when we hover*/
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 120%;
+    font-weight: 100;
+
+}
+
+.main-nav li a:hover{
+    border-bottom: 2px solid rgb(0, 247, 255) ;
+}
+
+p{
+    margin-left: 10px;
+    font-size: 150%;
+    padding-bottom: 50px;
+
+}
+
+.main-content{
+    width: 1180px;
+    position:absolute;
+    /*border: 1px solid red;*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+h1{
+    color:rgb(202, 29, 29);
+    font-weight: 200;
+    font-size: 250%;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    
+    font-family: 'Abril Fatface', cursive;
+
+
+}
+
+h2{
+    color: rgb(202, 29, 29);
+    font-size: 200%;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    font-family: 'Lato', sans-serif;
+    
+}
+
+h3{
+    color:wheat;
+    margin-bottom: 20px;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.btn{
+    
+}
+
+.donateButton{
+    background-color: wheat;
+    color: black;
+    font-weight: 200;
+    border: 1px solid indianred;
+    box-shadow: 5px 10px rgb(167, 35, 35) ;
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-weight: lighter;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+
+.donateButton:hover{
+    background-color: rgb(228, 124, 124);
+}
+
+
+.colorchange{
+    animation: colorchangequote 1s infinite;
+
+}
+
+.message{
+    padding-top: 20px;
+}
+
+@keyframes colorchangequote{
+    0%{color:gold}
+    25%{color:turquoise}
+    50%{color:goldenrod}
+    100%{color:turquoise}   
+}
+
+.mobile-icon{
+    display: none;
+}
+
+/*Responsive Qurries*/
+@media only screen and (max-width: 1180px){
+    .main-content{
+        width: 100%;
+        padding: 0 2%;
+    }
+}
+
+@media only screen and (max-width: 998px){
+    h1{font-size:200%}
+    h2{font-size:150%}
+    
+}
+
+@media only screen and (max-width: 768px){
+    h1{font-size:180%}
+
+    .main-nav{display:none;}
+
+    .mobile-icon{display: inline-block;
+    float: right;
+    color: white;
+    margin-top: 30px;
+    margin-right: 20px;
+    }
+
+    .main-nav{float:left;}
+
+    .main-nav li{
+        
+        display: block;
+        margin-top:10px;
+    }
+
+}
+
+.modal{
+    display: none;
+}
+
+.vision{
+    position: relative;
+    margin-top: 20px;
+    margin-left: 300px;
+    
+}
+
+.mission{
+    position: relative;
+    padding-top: 10px;
+    
+    margin-left: 300px;
+    
+}
+
+.program{
+    position: relative;
+    padding-top: 10px;
+    
+    margin-left: 300px;
+    
+}
+
+.links{
+    color:goldenrod;
+}
+
+.links li a{
+    color:honeydew;
+    font-size: larger;
+}
+.contact{
+    display: none;
+    margin-left: 1075px;
+    padding: 10px;
+    font-style:inherit;
+    background-size: inherit;
+    
+   
+
+}
+#condetails2 a:hover{
+    color:khaki;
+}
+#condetails1 a:hover{
+    color:wheat;
+    
+}
+#condetails3 a:hover{
+    color:rgb(218, 204, 80);
+    
+    
+}
+
+.colordetails{
+    color:rgb(241, 137, 137);
+}
